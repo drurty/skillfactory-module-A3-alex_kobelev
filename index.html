@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -19,11 +20,6 @@
 		</nav>
 	</header>
 	<main>
-		<form action="https:/google.com/search" method="GET">
-			<label for="search-google">Поиск через Гугл:</label>
-			<input type="search" name="q" id="search-google" placeholder="Введите поисковый запрос">
-			<button type="submit">Отправить</button>
-		</form>
 		<div class="first-floor-wrapper">
 			<div class= "first-floor">
 				<div class="text">
@@ -141,10 +137,10 @@
 					<h2 class="subscribe-header">Design tips, tricks, and freebies. Delivered weekly.</h2>
 					<p class="subscribe-text">Lorem ipsum dolor sit amet, incididunt ut labore consectetur adipisicing elit.</p>
 				</div>
-				<div class="subscribe-fields">
-					<p class="email-field">Email Address...</p>
-					<a class="subscribe-button" href="#">Subscribe</a>
-				</div>
+				<form class="subscribe-fields" action="#" method="GET">
+					<input class="email-field" type="email" name="email-input" placeholder="Email Address...">
+					<button class="subscribe-button" type="submit">Subscribe</button>
+				</form>
 			</div>
 		</div>
 		<div class="contact-form-wrapper">
@@ -156,14 +152,14 @@
 			<div class="contact-form">
 				<div class="contact-form-wrapper-left"></div>
 				<div class="contact-form-blocks">
-					<div class="contact-form-fields">
+					<form class="contact-form-fields" action="#" method="GET">
 						<div class="name-line">
-							<div class="name">Name</div>
-							<div class="your-mail">Your Mail</div>
+							<input class="name" type="text" name="name" placeholder="Name">
+							<input class="your-mail" type="text" name="email" placeholder="Your Mail">
 						</div>
-						<div class="type-your-message">Type your message</div>
-						<a class="send-message" href="#">Send message</a>
-					</div>
+						<input class="type-your-message" type="text" name="message" placeholder="Type your message">
+						<button class="send-message" type="submit">Send message</button>
+					</form>
 					<div class="contact-info">
 						<h2>Contact info</h2>
 						<address>
